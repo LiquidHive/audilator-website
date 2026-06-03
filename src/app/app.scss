@@ -376,21 +376,23 @@ body {
 }
 
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .about-text p {
   color: var(--on-surface-variant);
   margin-bottom: 16px;
   line-height: 1.7;
+  text-align: center;
 }
 
 .about-list {
   list-style: none;
   margin-top: 24px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-list li {
@@ -400,6 +402,7 @@ body {
   padding: 8px 0;
   font-weight: 500;
   font-size: 0.95rem;
+  justify-content: center;
 }
 
 .about-list .material-symbols-outlined {
@@ -505,9 +508,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 32px;
+  .about-list {
+    max-width: 100%;
   }
 
   .nav-links a:not(.nav-gh) {
