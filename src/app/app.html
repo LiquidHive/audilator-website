@@ -8,15 +8,12 @@
       <a href="#features">Features</a>
       <a href="#conversions">Conversions</a>
       <a href="#about">About</a>
-      <button
-        class="theme-toggle"
-        (click)="toggleTheme()"
-        [attr.aria-label]="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
-      >
+      <button class="theme-toggle" (click)="toggleTheme()"
+        [attr.aria-label]="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
         @if (isDark) {
-          <span class="material-symbols-outlined">light_mode</span>
+        <span class="material-symbols-outlined">light_mode</span>
         } @else {
-          <span class="material-symbols-outlined">dark_mode</span>
+        <span class="material-symbols-outlined">dark_mode</span>
         }
       </button>
     </div>
@@ -25,7 +22,6 @@
 
 <section class="hero">
   <div class="container">
-    <div class="hero-badge">v1.3.2</div>
     <h1 class="hero-title">Calculate with your voice</h1>
     <p class="hero-subtitle">
       Audilator is a voice-powered calculator for Android that lets you compute math expressions and
@@ -61,13 +57,13 @@
     <p class="section-desc">A smarter way to calculate using natural speech</p>
     <div class="feature-grid">
       @for (feature of features; track feature.title) {
-        <div class="feature-card">
-          <div class="feature-icon">
-            <span class="material-symbols-outlined">{{ feature.icon }}</span>
-          </div>
-          <h3 class="feature-title">{{ feature.title }}</h3>
-          <p class="feature-desc">{{ feature.desc }}</p>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <span class="material-symbols-outlined">{{ feature.icon }}</span>
         </div>
+        <h3 class="feature-title">{{ feature.title }}</h3>
+        <p class="feature-desc">{{ feature.desc }}</p>
+      </div>
       }
     </div>
   </div>
@@ -79,13 +75,13 @@
     <p class="section-desc">Everything you can convert with your voice</p>
     <div class="conversion-grid">
       @for (cat of conversionCategories; track cat.label) {
-        <div class="conversion-card">
-          <div class="conversion-icon">
-            <span class="material-symbols-outlined">{{ cat.icon }}</span>
-          </div>
-          <h3 class="conversion-title">{{ cat.label }}</h3>
-          <p class="conversion-desc">{{ cat.desc }}</p>
+      <div class="conversion-card">
+        <div class="conversion-icon">
+          <span class="material-symbols-outlined">{{ cat.icon }}</span>
         </div>
+        <h3 class="conversion-title">{{ cat.label }}</h3>
+        <p class="conversion-desc">{{ cat.desc }}</p>
+      </div>
       }
     </div>
   </div>
@@ -141,10 +137,7 @@
     </div>
     <p class="footer-desc">A voice-powered calculator for Android. Free and private.</p>
     <div class="footer-links">
-      <a
-        href="https://github.com/LiquidHive/app-privacy-policy/blob/main/PRIVACY_POLICY.md"
-        target="_blank"
-      >
+      <a href="https://github.com/LiquidHive/app-privacy-policy/blob/main/PRIVACY_POLICY.md" target="_blank">
         <span class="material-symbols-outlined">privacy_tip</span> Privacy Policy
       </a>
     </div>
