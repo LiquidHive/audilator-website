@@ -232,6 +232,12 @@
   background: var(--card-bg);
 }
 
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
 .feature-card {
   padding: 32px;
   border-radius: 20px;
