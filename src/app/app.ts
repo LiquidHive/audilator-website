@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,19 @@ import { Component } from '@angular/core';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {
+export class App implements OnInit {
+  protected isDark = localStorage.getItem('theme') === 'dark';
+
+  ngOnInit(): void {
+    document.documentElement.setAttribute('data-theme', this.isDark ? 'dark' : 'light');
+  }
+
+  toggleTheme(): void {
+    this.isDark = !this.isDark;
+    document.documentElement.setAttribute('data-theme', this.isDark ? 'dark' : 'light');
+    localStorage.setItem('theme', this.isDark ? 'dark' : 'light');
+  }
+
   protected readonly conversionCategories = [
     {
       icon: 'calculate',
