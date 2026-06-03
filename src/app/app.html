@@ -1,0 +1,164 @@
+<header class="header">
+  <nav class="nav container">
+    <div class="nav-brand">
+      <span class="material-symbols-outlined brand-icon">neurology</span>
+      <span class="brand-text">Audilator</span>
+    </div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#conversions">Conversions</a>
+      <a href="#about">About</a>
+      <a href="https://github.com/LiquidHive/audilator" target="_blank" class="nav-gh">
+        <span class="material-symbols-outlined">code</span> GitHub
+      </a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">v1.3.2</div>
+    <h1 class="hero-title">Calculate with your voice</h1>
+    <p class="hero-subtitle">
+      Audilator is a voice-powered calculator for Android that lets you compute math expressions and
+      convert between <strong>16 categories of units</strong>
+      — all offline, all hands-free.
+    </p>
+    <div class="hero-actions">
+      <a href="#" class="btn btn-primary">
+        <span class="material-symbols-outlined">download</span>
+        Google Play
+      </a>
+      <a href="https://github.com/LiquidHive/audilator" target="_blank" class="btn btn-secondary">
+        <span class="material-symbols-outlined">code</span>
+        View Source
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-value">16</span>
+        <span class="stat-label">Unit Categories</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">100%</span>
+        <span class="stat-label">Offline</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">200+</span>
+        <span class="stat-label">Voice Commands</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section features">
+  <div class="container">
+    <h2 class="section-title">Why Audilator?</h2>
+    <p class="section-desc">A smarter way to calculate using natural speech</p>
+    <div class="feature-grid">
+      @for (feature of features; track feature.title) {
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">{{ feature.icon }}</span>
+          </div>
+          <h3 class="feature-title">{{ feature.title }}</h3>
+          <p class="feature-desc">{{ feature.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section id="conversions" class="section conversions">
+  <div class="container">
+    <h2 class="section-title">Conversion Categories</h2>
+    <p class="section-desc">Everything you can convert with your voice</p>
+    <div class="conversion-grid">
+      @for (cat of conversionCategories; track cat.label) {
+        <div class="conversion-card">
+          <div class="conversion-icon">
+            <span class="material-symbols-outlined">{{ cat.icon }}</span>
+          </div>
+          <h3 class="conversion-title">{{ cat.label }}</h3>
+          <p class="conversion-desc">{{ cat.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div class="container">
+    <h2 class="section-title">About Audilator</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Audilator is a free, open-source calculator built with Flutter that uses on-device speech
+          recognition to let you calculate math expressions and convert units entirely with your
+          voice.
+        </p>
+        <p>
+          Whether you need to quickly compute a tip, convert kilometers to miles, or figure out a
+          percentage — just speak naturally and get your answer instantly. No typing, no tapping.
+        </p>
+        <ul class="about-list">
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> Fully offline speech
+            recognition
+          </li>
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> Material 3 design with
+            dynamic theming
+          </li>
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> 200+ supported voice
+            commands
+          </li>
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> 16 unit conversion
+            categories
+          </li>
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> Multi-language support
+          </li>
+          <li>
+            <span class="material-symbols-outlined">check_circle</span> Open source (MIT license)
+          </li>
+        </ul>
+      </div>
+      <div class="about-tech">
+        <h3>Built with</h3>
+        <div class="tech-chips">
+          <span class="chip">Flutter</span>
+          <span class="chip">Dart</span>
+          <span class="chip">Riverpod</span>
+          <span class="chip">Speech to Text</span>
+          <span class="chip">flutter_tts</span>
+          <span class="chip">function_tree</span>
+          <span class="chip">Material 3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <span class="material-symbols-outlined">neurology</span>
+      <span>Audilator</span>
+    </div>
+    <p class="footer-desc">
+      A voice-powered calculator for Android. Free, open source, and private.
+    </p>
+    <div class="footer-links">
+      <a href="https://github.com/LiquidHive/audilator" target="_blank">
+        <span class="material-symbols-outlined">code</span> GitHub
+      </a>
+      <a href="https://github.com/LiquidHive/audilator/blob/main/PRIVACY_POLICY.md" target="_blank">
+        <span class="material-symbols-outlined">privacy_tip</span> Privacy Policy
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Audilator. All rights reserved.</p>
+  </div>
+</footer>
